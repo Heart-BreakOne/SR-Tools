@@ -310,7 +310,7 @@ func normalizeBattlePlan(battlePlans: [String : Any], gridWidth: Double, gridLen
 }
 
 func getEnemyCaptain(raidPlacements: Any?, enemyName: String) -> [Captain] {
-    let placements = raidPlacements as! [[String: Any]]
+    let placements = raidPlacements as? [[String: Any]] ?? []
     var captain: [Captain] = []
     for p in placements {
         let xStr = p["X"] as! String

@@ -32,6 +32,7 @@ class ViewController: NSViewController {
     @IBAction func fetchClicked(_ sender: NSButton) {
         
         let enemyName = nmTxtField.stringValue
+        bpView?.removeFromSuperview()
         self.drawEnemyMap(enemyName: enemyName)
     }
     
@@ -101,7 +102,13 @@ class ViewController: NSViewController {
             let purpleZones = result.4
             let enemyZones = result.5
             let markers = result.6
-            let captain = result.7[0]
+            var captain: Captain
+            if !result.7.isEmpty {
+                captain = result.7[0]
+            } else {
+                captain = Captain(unit: "", x: 1000.0, y: 1000.0, width: 0.0, height: 0.0)
+            }
+
             self.capTxtField.stringValue = captain.unit
             
             let cartesianPlaneSize = CGSize(width: width, height: height)
@@ -136,7 +143,7 @@ class BattlePlanView: NSView {
     
     var width: Double = 0.0
     var height: Double = 0.0
-    var scale: CGFloat = 12
+    var scale: CGFloat = 15
     var captain: Captain = Captain(unit: "", x: 0.0, y: 0.0, width: 0, height: 0)
     var zones: NSArray?
     var enemyZones: NSArray?
