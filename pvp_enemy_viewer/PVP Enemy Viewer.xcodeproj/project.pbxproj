@@ -14,6 +14,9 @@
 		82A7691C2BA0031700B02799 /* PVP_Enemy_ViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7691B2BA0031700B02799 /* PVP_Enemy_ViewerTests.swift */; };
 		82A769262BA0031700B02799 /* PVP_Enemy_ViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A769252BA0031700B02799 /* PVP_Enemy_ViewerUITests.swift */; };
 		82A769282BA0031700B02799 /* PVP_Enemy_ViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A769272BA0031700B02799 /* PVP_Enemy_ViewerUITestsLaunchTests.swift */; };
+		82A769382BA00B9C00B02799 /* TokenViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A769372BA00B9C00B02799 /* TokenViewerController.swift */; };
+		82A7693A2BA01AA600B02799 /* GameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A769392BA01AA600B02799 /* GameDataManager.swift */; };
+		82A7693C2BA01ABA00B02799 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7693B2BA01ABA00B02799 /* Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		82A769212BA0031700B02799 /* PVP Enemy ViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PVP Enemy ViewerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A769252BA0031700B02799 /* PVP_Enemy_ViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVP_Enemy_ViewerUITests.swift; sourceTree = "<group>"; };
 		82A769272BA0031700B02799 /* PVP_Enemy_ViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVP_Enemy_ViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82A769372BA00B9C00B02799 /* TokenViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenViewerController.swift; sourceTree = "<group>"; };
+		82A769392BA01AA600B02799 /* GameDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataManager.swift; sourceTree = "<group>"; };
+		82A7693B2BA01ABA00B02799 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +101,11 @@
 		82A769082BA0031400B02799 /* PVP Enemy Viewer */ = {
 			isa = PBXGroup;
 			children = (
+				82A769362BA0041F00B02799 /* Controller */,
+				82A769352BA0041900B02799 /* View */,
+				82A769342BA0040700B02799 /* Model */,
 				82A769092BA0031400B02799 /* AppDelegate.swift */,
-				82A7690B2BA0031400B02799 /* ViewController.swift */,
 				82A7690D2BA0031600B02799 /* Assets.xcassets */,
-				82A7690F2BA0031600B02799 /* Main.storyboard */,
 				82A769122BA0031600B02799 /* PVP_Enemy_Viewer.entitlements */,
 			);
 			path = "PVP Enemy Viewer";
@@ -119,6 +126,32 @@
 				82A769272BA0031700B02799 /* PVP_Enemy_ViewerUITestsLaunchTests.swift */,
 			);
 			path = "PVP Enemy ViewerUITests";
+			sourceTree = "<group>";
+		};
+		82A769342BA0040700B02799 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82A769392BA01AA600B02799 /* GameDataManager.swift */,
+				82A7693B2BA01ABA00B02799 /* Structs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82A769352BA0041900B02799 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82A7690F2BA0031600B02799 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82A769362BA0041F00B02799 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82A7690B2BA0031400B02799 /* ViewController.swift */,
+				82A769372BA00B9C00B02799 /* TokenViewerController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A769382BA00B9C00B02799 /* TokenViewerController.swift in Sources */,
+				82A7693A2BA01AA600B02799 /* GameDataManager.swift in Sources */,
 				82A7690C2BA0031400B02799 /* ViewController.swift in Sources */,
+				82A7693C2BA01ABA00B02799 /* Structs.swift in Sources */,
 				82A7690A2BA0031400B02799 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
