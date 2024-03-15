@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825270D12BA3E72400329522 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825270D02BA3E72400329522 /* Structs.swift */; };
 		8280FF042BA31280007BA2A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8280FF032BA31280007BA2A0 /* AppDelegate.swift */; };
 		8280FF062BA31280007BA2A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8280FF052BA31280007BA2A0 /* ViewController.swift */; };
 		8280FF082BA31281007BA2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8280FF072BA31281007BA2A0 /* Assets.xcassets */; };
 		8280FF0B2BA31281007BA2A0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8280FF0A2BA31281007BA2A0 /* Base */; };
+		8280FF132BA31470007BA2A0 /* TokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8280FF122BA31470007BA2A0 /* TokenViewController.swift */; };
+		8280FF152BA31E01007BA2A0 /* GameRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8280FF142BA31E01007BA2A0 /* GameRequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		825270D02BA3E72400329522 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		8280FF002BA31280007BA2A0 /* PVP Live Captains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PVP Live Captains.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8280FF032BA31280007BA2A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8280FF052BA31280007BA2A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8280FF072BA31281007BA2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8280FF0A2BA31281007BA2A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8280FF0C2BA31281007BA2A0 /* PVP_Live_Captains.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PVP_Live_Captains.entitlements; sourceTree = "<group>"; };
+		8280FF122BA31470007BA2A0 /* TokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenViewController.swift; sourceTree = "<group>"; };
+		8280FF142BA31E01007BA2A0 /* GameRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		825270CB2BA3E5C800329522 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8280FF122BA31470007BA2A0 /* TokenViewController.swift */,
+				8280FF052BA31280007BA2A0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		825270CC2BA3E5DE00329522 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8280FF092BA31281007BA2A0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		825270CD2BA3E5E900329522 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8280FF142BA31E01007BA2A0 /* GameRequestManager.swift */,
+				825270D02BA3E72400329522 /* Structs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8280FEF72BA31280007BA2A0 = {
 			isa = PBXGroup;
 			children = (
@@ -53,10 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				8280FF032BA31280007BA2A0 /* AppDelegate.swift */,
-				8280FF052BA31280007BA2A0 /* ViewController.swift */,
-				8280FF072BA31281007BA2A0 /* Assets.xcassets */,
-				8280FF092BA31281007BA2A0 /* Main.storyboard */,
 				8280FF0C2BA31281007BA2A0 /* PVP_Live_Captains.entitlements */,
+				8280FF072BA31281007BA2A0 /* Assets.xcassets */,
+				825270CD2BA3E5E900329522 /* Model */,
+				825270CC2BA3E5DE00329522 /* View */,
+				825270CB2BA3E5C800329522 /* Controller */,
 			);
 			path = "PVP Live Captains";
 			sourceTree = "<group>";
@@ -131,6 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8280FF132BA31470007BA2A0 /* TokenViewController.swift in Sources */,
+				8280FF152BA31E01007BA2A0 /* GameRequestManager.swift in Sources */,
+				825270D12BA3E72400329522 /* Structs.swift in Sources */,
 				8280FF062BA31280007BA2A0 /* ViewController.swift in Sources */,
 				8280FF042BA31280007BA2A0 /* AppDelegate.swift in Sources */,
 			);

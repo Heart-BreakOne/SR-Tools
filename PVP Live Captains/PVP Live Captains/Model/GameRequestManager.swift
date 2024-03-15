@@ -79,7 +79,6 @@ func getLiveCaptainsData(completion: @escaping (String) -> Void) {
                     print(gameData["errorMessage"]!)
                     return
                 }
-                //do th ings here
                 
                 if let dataDict = gameData["data"] as? [String: Any] {
                     if let captains = dataDict["captains"] as? [Any] {
