@@ -17,7 +17,7 @@
 
 ## PVP Enemy planning viewer
 <p align="center">
-<img src="https://i.imgur.com/2srJNLZ.png" alt="Plan viewer" height="80%" width="80%" hspace="30">
+<img src="https://i.imgur.com/NreSQrB.png" alt="Plan viewer" height="80%" width="80%" hspace="30">
 </p>
 
 ## PVP Live Captains
