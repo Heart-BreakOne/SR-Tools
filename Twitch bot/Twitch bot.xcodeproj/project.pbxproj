@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		825770FB2BA6F30F0020E335 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825770FA2BA6F30F0020E335 /* main.swift */; };
+		823795692BA7446F007EEB20 /* whistle.mp3 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 823795682BA7446A007EEB20 /* whistle.mp3 */; };
+		825771082BA6F31B0020E335 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825771012BA6F31B0020E335 /* Tasks.swift */; };
+		825771092BA6F31B0020E335 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825771022BA6F31B0020E335 /* main.swift */; };
+		8257710A2BA6F31B0020E335 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825771032BA6F31B0020E335 /* Game.swift */; };
+		8257710B2BA6F31B0020E335 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825771042BA6F31B0020E335 /* Structs.swift */; };
+		8257710C2BA6F31B0020E335 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825771072BA6F31B0020E335 /* Commands.swift */; };
+		8257710D2BA6F3480020E335 /* data.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 825771052BA6F31B0020E335 /* data.json */; };
+		8257710F2BA6F4560020E335 /* TwitchIRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8257710E2BA6F4560020E335 /* TwitchIRC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -17,14 +24,23 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				8257710D2BA6F3480020E335 /* data.json in CopyFiles */,
+				823795692BA7446F007EEB20 /* whistle.mp3 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		823795682BA7446A007EEB20 /* whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whistle.mp3; sourceTree = "<group>"; };
 		825770F72BA6F30F0020E335 /* Twitch Bot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Twitch Bot"; sourceTree = BUILT_PRODUCTS_DIR; };
-		825770FA2BA6F30F0020E335 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		825771012BA6F31B0020E335 /* Tasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		825771022BA6F31B0020E335 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = "../../../../Downloads/Twitch bot/main.swift"; sourceTree = "<group>"; };
+		825771032BA6F31B0020E335 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		825771042BA6F31B0020E335 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		825771052BA6F31B0020E335 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		825771072BA6F31B0020E335 /* Commands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Commands.swift; path = "/Users/leonardoluiz/dev/SR-Tools/Twitch Bot/Twitch Bot/Commands.swift"; sourceTree = "<absolute>"; };
+		8257710E2BA6F4560020E335 /* TwitchIRC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchIRC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +73,24 @@
 		825770F92BA6F30F0020E335 /* Twitch Bot */ = {
 			isa = PBXGroup;
 			children = (
-				825770FA2BA6F30F0020E335 /* main.swift */,
+				825771062BA6F31B0020E335 /* Assets */,
+				825771032BA6F31B0020E335 /* Game.swift */,
+				825771022BA6F31B0020E335 /* main.swift */,
+				825771042BA6F31B0020E335 /* Structs.swift */,
+				825771012BA6F31B0020E335 /* Tasks.swift */,
+				825771072BA6F31B0020E335 /* Commands.swift */,
+				8257710E2BA6F4560020E335 /* TwitchIRC.swift */,
 			);
 			path = "Twitch Bot";
+			sourceTree = "<group>";
+		};
+		825771062BA6F31B0020E335 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				825771052BA6F31B0020E335 /* data.json */,
+				823795682BA7446A007EEB20 /* whistle.mp3 */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				825770FB2BA6F30F0020E335 /* main.swift in Sources */,
+				825771082BA6F31B0020E335 /* Tasks.swift in Sources */,
+				8257710B2BA6F31B0020E335 /* Structs.swift in Sources */,
+				825771092BA6F31B0020E335 /* main.swift in Sources */,
+				8257710C2BA6F31B0020E335 /* Commands.swift in Sources */,
+				8257710A2BA6F31B0020E335 /* Game.swift in Sources */,
+				8257710F2BA6F4560020E335 /* TwitchIRC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
