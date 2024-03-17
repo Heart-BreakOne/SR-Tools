@@ -45,7 +45,6 @@ func sendStreak() -> String {
     return "The current win streak is \(streakCounter)"
 }
 
-
 // Set battle code
 func setCode(code: String) -> String {
     var json = getJson()
@@ -94,6 +93,7 @@ func updateList(username:String, listId: String) {
     updateJson(json: json)
     
 }
+
 //Play audio cue to start battle
 func playBattle() {
     
@@ -103,7 +103,6 @@ func playBattle() {
     process.launch()
     process.waitUntilExit()
 }
-
 
 // Check battle stats
 func checkStats(from: String) -> String{
@@ -121,7 +120,6 @@ func checkStats(from: String) -> String{
     
     return stats
 }
-
 
 func getAllStats(battleLog: [[String: Any]]) -> String {
     var wins = 0
