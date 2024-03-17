@@ -6,10 +6,6 @@
 //
 
 import Foundation
-import AVFoundation
-
-
-import Foundation
 
 //Log battle
 func logBattle(eventId: String, captainName: String, scale: String, qttPlayers: String, enmPlayers: String, power: String, enmPower: String, spell: String, enmSpell: String, unit: String, enmUnit: String, outcome: String) -> String {
@@ -98,30 +94,8 @@ func updateList(username:String, listId: String) {
     updateJson(json: json)
     
 }
-
 //Play audio cue to start battle
 func playBattle() {
-    
-    guard let url = URL(string: "") else {
-        print("Invalid URL")
-        return
-    }
-
-    do {
-        let soundData = try Data(contentsOf: url)
-        let audioPlayer = try AVAudioPlayer(data: soundData)
-        audioPlayer.volume = 1
-        
-        let minuteString = String(format: "%02d", (Int(audioPlayer.duration) / 60))
-        let secondString = String(format: "%02d", (Int(audioPlayer.duration) % 60))
-        print("TOTAL TIMER: \(minuteString):\(secondString)")
-        
-        // Start playback
-        audioPlayer.prepareToPlay()
-        audioPlayer.play()
-    } catch {
-        print(error)
-    }
     
     let process = Process()
     process.launchPath = "/usr/bin/say"
