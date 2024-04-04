@@ -146,8 +146,7 @@ func getImageData(decodedResponse: Unit_Viewer.BattleGroundData, completion: @es
     
     for index in placements.indices {
         var unitName = placements[index].CharacterType
-        let digitsToRemove = CharacterSet(charactersIn: "0123456789")
-        unitName = unitName.components(separatedBy: digitsToRemove).joined()
+        
         placements[index].CharacterType = unitName
     }
     
