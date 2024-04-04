@@ -14,8 +14,8 @@ func getUserData() -> (String, String, String, String) {
     var token = UserDefaults.standard.object(forKey: "token") as! String
     let userId = String(token.split(separator: "%").first ?? "")
     token = "ACCESS_INFO=\(token)"
-    let clientVersion = UserDefaults.standard.object(forKey: "clientVersion") as! String
-    let dataVersion = UserDefaults.standard.object(forKey: "dataVersion") as! String
+    let clientVersion = UserDefaults.standard.object(forKey: "clientVersion") as? String ?? ""
+    let dataVersion = UserDefaults.standard.object(forKey: "dataVersion") as? String ?? ""
     
     return (token, userId, clientVersion, dataVersion)
     
